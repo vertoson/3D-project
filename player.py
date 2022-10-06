@@ -64,6 +64,9 @@ class Player:
     def update(self):
         self.movement()
 
+    @property 
+    def pos(self):
+        return self.x, self.y
 
     @property # special function used to retrieve a private attributed value without the use of getters. In this case, is used to be called to find the location of player more easily
     def map_pos(self):
